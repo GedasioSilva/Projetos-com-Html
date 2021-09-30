@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+
+<div>
+    
+        <h1>Informe Seu Dados para O Cadastro</h1>
+
+    <form action="Cadastro.php" method="GET">
+    <fieldset> <legend>Cadastro</legend>
+        
+        Nome: <input type="text" name="nome" placeholder="Digite seu nome" size="15" maxlength="50" minlength="5"><br>
+        Nascimento <input type="number" name="ano" maxlength="3" min="1" placeholder="Idade"> <br>
+        E-mail: <input type="text" name="eml" placeholder="Digite seu E-mail"><br>
+    </fieldset>
+
+    <fieldset> <Legend>Sexo</Legend>
+         <input type="radio" name="sexo" value="homem" checked> 
+         <label for="smas">Masculino</label>
+         <input type="radio" name="sexo" value="mulher"> 
+         <label for="fsexo">Feminino</label>
+    </fieldset>
+    
+    
+
+    <input type="submit" value="Verificar">
+</div>    
+</body>
+</html>
