@@ -1,4 +1,11 @@
-.interface{
-    width: 300px;
-    color: aqua;
+div#intface{
+    text-align: justify;
+    width: 1080px;
+    margin: -15px auto 0px auto;
+    background-color: aquamarine;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px rgb(71, 68, 68);
+}
+p{
+    text-indent: 10px;
 }
