@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+        label{ color: #606060;
+                font-weight: bold;
+        }
+        .bt{
+            background-color: #e49595;
+            color: white;
+            width: 75px;
+            height: 25px;
+            border: 0px;
+            cursor: pointer;
+        }
+        input:hover{
+            zoom: 130%;
+            border: solid 1px black;
+        }
+        label:hover{
+            zoom: 130%;
+        }
+        textarea:hover{
+            zoom: 130%;
+
+        }
+        select:hover{
+            zoom: 130%;
+        }
+        input:focus{
+            background-color:hotpink;
+        }
+        textarea:focus{
+            background-color: rgb(99, 105, 103);
+        }
+        
+    </style>
+
+<body>
+   <form action="" name="F_Aula" method="post">
+
+        <label  for="f_Nome">Nome:</label>
+       
+        <input type="text" name="f_Nome" size="30" maxlength="20"> <br/>
+        <br>
+        <label for="f_senhar" >Senhar:</label>
+        <input type="password" name="f_Senha" maxlength="20" size="15">
+        <br/>  <br/>
+
+        <label> Qual Esporte você pratica?</label><br><br>
+        <input type="checkbox" name="F_Futebol" value="Futebol"><label>Futebol</label>
+        <input type="checkbox" name="F_Natacao" value="Natacal"><label>Natação</label>
+        <input type="checkbox" name="F_Basquete" value="Basquete"><label>Basquete</label> <br>
+        <br>
+
+        <label>Posssui Veículo?</label><br>
+        <input type="radio" name="F_Veiculo" value="s"><label>Sim</label>
+        <input type="radio" name="F_Veiculo" value="n"><label>Não</label>
+        <br><br>
+
+        <label>Estado:</label><br/>
+        <select name="F_Estado">
+            <option value="MG">Minas Gerais </option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="ES">Espírito Santo</option>
+        </select><br><br/>
+
+        <label for="F_Comentario" >Comentario:</label><br>
+        <textarea name="F_Comentario" cols="45" rows="5" >
+        </textarea><br><br/>
+
+        <input class="bt" type="submit" value="Enviar">
+        <input class="bt" type="reset" value="Limpar">
+        <input class="bt" type="button" value="Sem ação">
+
+   </form> 
+   <a href="aula.html">Voltar</a>
+</body>
+</html>

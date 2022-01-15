@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem com Links</title>
+</head>
+    <script>
+        function abrepg(link){
+            //window.location.href=link;
+            window.open(link);
+        }
+    </script>
+<body>
+    <select name="Bebidas" onchange="abrepg(value)">
+        <option  value="https://www.youtube.com/watch?v=xafDcxUKDrE&list=PLx4x_zx8csUgS5ioRmQVBeGHmKBQEyNXQ&index=23">Youtube</option>
+        <option value="https://www.facebook.com/" >Facebook</option>
+        <option value="https://www.google.com/webhp?authuser=1">google</option>
+        <option value="https://trello.com/b/FKNGJRfb/estudo-programa%C3%A7%C3%A3o">trelo</option>
+    </select>
+</body>
+</html>
