@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe Date</title>
+
+    <script>
+
+        var data = new Date();
+    
+        var meses = new Array("J","F","M","A","M","J",
+        "J","A","S","O","N","D",);
+    
+        var dsem = new Array("S","T","Q","Q","S","S","D",);
+    
+        document.write(dsem[data.getDay()] + "  "+ data.getDate() + " De " + meses[data.getMonth()] +" De "+data.getFullYear());
+    
+    
+        function movRel(){
+        var tempo = new Date();
+        var hora = tempo.getHours();
+        var min = tempo.getMinutes();
+        var seg = tempo.getSeconds();
+    
+        
+    
+        if(hora < 10){
+            hora = "0"+tempo.getHours();
+        } if(min < 10){
+            min = "0"+tempo.getMinutes();
+        } if(seg < 10){
+            seg = "0"+tempo.getSeconds();
+        }
+        var impHoras = hora + ":" + min + ":" + seg;
+    
+       
+        document.frel.rel.value = impHoras;
+
+        setTimeout("movRel()","1000");
+
+        }
+    
+    </script>
+
+</head>
+
+<body onload="movRel()" >
+
+
+    <form name="frel">
+        <input type="text" name="rel" size="4">
+    </form>
+
+
+</body>
+</html>

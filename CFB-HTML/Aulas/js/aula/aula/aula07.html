@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulários</title>
+</head>
+<script>
+
+    function validar(){
+        if(document.cad.fnome.value == ""){
+            alert("Campo Nome não Pode Ser Vazio");
+            document.cad.fnome.focus();
+            return false;
+        }
+
+        if(document.cad.fsenha.value == ""){
+            alert("Campo Senhar não Pode Estar em Branco");
+            document.cad.fsenha.focus();
+            return false;
+        }
+
+        if(document.cad.ftel.value == ""){
+            alert("Digite Seu Telefone");
+            document.cad.ftel.focus();
+            return false;
+        }
+
+    }
+
+    function mudaCor(obj,tipo){
+        //1 = Entrada Onfocus
+        if(tipo == 1){
+            obj.style.backgroundColor="Black";
+            obj.style.color="#ffffff";
+        }else if ( tipo == 2){ // saida Onblur
+            obj.style.backgroundColor = "white";
+            obj.style.color ="Black";
+        }
+    }
+
+</script>
+<body>
+    
+    
+
+    <form name="cad" onsubmit="return validar()">
+
+        <label>Nome:</label>
+        <input type="text" name="fnome" size="50" onfocus="mudaCor(this,1)" onBlur = "mudaCor(this,2)">
+        <br>
+
+        <label>Senhar:</label>
+        <input type="password" name="fsenha" size="10" onfocus="mudaCor(this,1)" onBlur = "mudaCor(this,2)">
+        <br>
+
+        <label>Telefone:</label>
+        <input type="text" name="ftel" size="15" onfocus="mudaCor(this,1)" onBlur = "mudaCor(this,2)">
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
