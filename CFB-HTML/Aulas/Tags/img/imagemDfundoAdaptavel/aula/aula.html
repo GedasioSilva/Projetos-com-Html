@@ -7,17 +7,21 @@
     <title> Imagem de fundo com tamanho adaptável</title>
 </head>
 <style>
-    body{ /* deixar a img no tamanho da tela
-        */
-        background-image: url(Almoço.jpg);
-        background-attachment: fixed;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: black;
-
+    body{
+     margin: 0;   
+    }
+    #container{
+        width: 100vw;
+        height: 100vh;
+        background: url(Almoço.jpg);
+        background-size:cover;
+        
+    }
+    url{
+        width: 100%;
     }
 </style>
 <body>
-    <p>ficou bom ?</p>
+    <div id="container"></div>
 </body>
 </html>
